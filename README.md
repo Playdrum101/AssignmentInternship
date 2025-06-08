@@ -12,7 +12,7 @@ A simple and modern React Native app to manage your daily tasks. Add, complete, 
 - **Task List Display:** See all your tasks in a scrollable list.
 - **Task Completion:** Mark tasks as complete/incomplete with a checkbox and visual distinction.
 - **Delete Task:** Remove tasks with a trash icon.
-- **Local Notifications:** Get a reminder notification for each new task (10 seconds after creation).
+- **Local Notifications:** Get a reminder notification for each new task.
 
 ### Bonus Features
 - **Data Persistence:** Tasks are saved locally using AsyncStorage and persist after app restarts.
