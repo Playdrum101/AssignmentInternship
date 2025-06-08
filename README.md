@@ -1,50 +1,91 @@
-# Welcome to your Expo app 👋
+# My Tasks App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Author:** Sourabh
 
-## Get started
+## Description
+A simple and modern React Native app to manage your daily tasks. Add, complete, edit, prioritize, and delete tasks with ease. Get local notifications as reminders for your tasks. All data is saved locally and persists even after closing the app.
 
-1. Install dependencies
+---
 
-   ```bash
+## Features
+- **Add Tasks:** Enter a new task and add it to your list.
+- **Task List Display:** See all your tasks in a scrollable list.
+- **Task Completion:** Mark tasks as complete/incomplete with a checkbox and visual distinction.
+- **Delete Task:** Remove tasks with a trash icon.
+- **Local Notifications:** Get a reminder notification for each new task (10 seconds after creation).
+
+### Bonus Features
+- **Data Persistence:** Tasks are saved locally using AsyncStorage and persist after app restarts.
+- **Edit Task:** Edit the text of existing tasks.
+- **Task Prioritization:** Set tasks as high, medium, or low priority with color coding.
+- **Cancel Notifications:** When a task is marked complete, its notification is cancelled.
+- **Modern UI:** Clean, user-friendly interface with icons and color highlights.
+
+---
+
+## Setup & Running the App
+
+### Prerequisites
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Expo Go](https://expo.dev/client) app on your iOS/Android device
+
+### Steps
+1. **Clone the repository:**
+   ```
+   git clone <your-repo-url>
+   cd my-tasks-app
+   ```
+2. **Install dependencies:**
+   ```
    npm install
    ```
-
-2. Start the app
-
-   ```bash
+3. **Start the Expo server:**
+   ```
    npx expo start
    ```
+4. **Open the app:**
+   - Scan the QR code in your terminal with the Expo Go app on your phone.
+   - The app will load and you can start managing your tasks!
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Challenges & Design Choices
+- **Expo Router:** The project uses the new Expo Router structure, so the main app code is in `app/(tabs)/index.tsx`.
+- **TypeScript & JavaScript:** The main screen is in TypeScript, while the Task component is in JavaScript for simplicity and compatibility.
+- **Notification Handling:** Notifications are scheduled for each task and cancelled if the task is completed.
+- **Persistence:** AsyncStorage is used for reliable local data storage.
+- **UI/UX:** The app uses color coding, icons, and a modern layout for a pleasant user experience.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## Author
+Sourabh
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
+If you have any questions or want to contribute, feel free to open an issue or pull request!
+
+## Technical Details
+
+- Built with React Native and Expo
+- Uses AsyncStorage for data persistence
+- Implements Expo Notifications for task reminders
+- Follows modern React practices with hooks
+- Implements proper error handling and user feedback
+
+## Project Structure
+
+```
+my-tasks-app/
+├── src/
+│   └── components/
+│       └── Task.js
+├── App.js
+├── package.json
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Contributing
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Feel free to submit issues and enhancement requests! 
